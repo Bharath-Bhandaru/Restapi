@@ -8,7 +8,7 @@ function RandomButton() {
     const callAPIRandom = async (event) => {
         event.preventDefault();
         try {
-            const response = await axios.get("http://labs.bible.org/api/?passage=random&formatting=plain&callback=?");
+            const response = await axios.get("https://labs.bible.org/api/?passage=random&formatting=plain&callback=?");
         console.log("API Response:", response.data);
         setDisplayText(response.data);
         } catch (error) {
